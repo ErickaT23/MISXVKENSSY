@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090708">
+  <title>Mis XV | Kenssy Sthefania</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <audio id="music" loop src="cancion.mp3"></audio>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <img class="rose-emblem" src="images/ROSA.png" alt="Rosa decorativa">
+      <p class="eyebrow">Mis Quince Años</p>
+      <h1>Kenssy<br><span>Sthefania</span></h1>
+      <img class="hero-divider" src="images/SEPARADOR-1.png" alt="Separador decorativo">
+      <p class="hero-date">Sábado 06 de Noviembre, 2026</p>
+      <a class="scroll-link" href="#bienvenida">Desliza hacia abajo <span>↓</span></a>
+    </section>
+
+    <section class="music-player" aria-label="Reproductor de música">
+      <p class="player-label">Dale play a mi canción</p>
+      <button class="music-button" id="musicButton" type="button" aria-label="Reproducir música">▶</button>
+      <div class="progress-container">
+        <input id="musicProgress" type="range" min="0" max="100" value="0" aria-label="Progreso de la canción">
+        <div class="music-time"><span id="currentTime">0:00</span> / <span id="duration">0:00</span></div>
+      </div>
+    </section>
+
+    <section class="section blessing" id="bienvenida">
+      <div class="blessing-frame">
+        <div class="blessing-content">
+          <img class="blessing-divider" src="images/SEPARADOR-1.png" alt="Separador decorativo">
+          <p class="blessing-quote">Hay momentos que se guardan en el corazón para toda la vida. Un sueño, una ilusión y una noche mágica para recordar.</p>
+          <p>Con la bendición de Dios y el amor de mi Familia y Padrinos quiero compartir contigo este día tan especial.</p>
+          <h2 class="blessing-heading">Mis padres</h2>
+          <p>Milton Espinoza Vargas<br>y Arminda Analy Godínez Cabrera</p>
+          <h2 class="blessing-heading">Mis padrinos</h2>
+          <p>José Aníbal Godínez Cabrera<br>Marianjelly Godínez Cabrera<br>Esposos Fong Véliz<br>Zuleika María José Hernández Montenegro</p>
+          <img class="blessing-divider" src="images/SEPARADOR-1.png" alt="Separador decorativo inferior">
+        </div>
+      </div>
+    </section>
+
+    <section class="section people countdown-section">
+      <p class="countdown-lead">La cuenta regresiva comienza</p>
+      <h2>Faltan...</h2>
+      <div class="countdown" id="countdown" aria-label="Cuenta regresiva">
+        <div><strong id="days">00</strong><span>Días</span></div>
+        <div><strong id="hours">00</strong><span>Horas</span></div>
+        <div><strong id="minutes">00</strong><span>Minutos</span></div>
+        <div><strong id="seconds">00</strong><span>Segundos</span></div>
+      </div>
+    </section>
+
+    <section class="section details">
+      <img class="reception-art" src="images/XV.png" alt="XV decorativos">
+      <section class="section invitation-banner countdown-section">
+        <p>Con mucha alegría en mi corazón quiero invitarte a celebrar conmigo uno de los momentos más especiales de mi vida.</p>
+      </section>
+    </section>
+
+    <section class="section reception-info">
+      <p class="reception-kicker">Recepción</p>
+      <h2>Salón y Centro de Convenciones<br><span>EL PEÑÓN</span></h2>
+      <p>Siquinalá, Escuintla<br>6:00 pm</p>
+      <a class="button" href="https://maps.app.goo.gl/Z4d8brtBWpZtH7xn8" target="_blank" rel="noopener">Ver ubicación</a>
+    </section>
+
+    <section class="section two-cards">
+      <article class="mini-card">
+        <span class="card-symbol">♡</span>
+        <p class="eyebrow">Un detalle especial</p>
+        <h2>Regalo</h2>
+        <p>Con mucho cariño, si desean hacerme un obsequio, una <b>contribución en efectivo</b> será recibida con gratitud.</p>
+      </article>
+      <article class="mini-card">
+        <span class="card-symbol">✧</span>
+        <p class="eyebrow">Código de vestimenta</p>
+        <h2>Formal</h2>
+        <p>Los colores <b>rojo y dorado</b> son exclusivos de la quinceañera.</p>
+      </article>
+    </section>
+
+    <section class="section rsvp">
+      <p class="eyebrow">Tu presencia es mi mejor regalo</p>
+      <h2>RSVP</h2>
+      <p>Espero poder contar con tu presencia en este día especial.<br>Por favor, ¿podrías confirmar tu asistencia?</p>
+      <p class="deadline">Confirmar antes del <b>30 de octubre</b></p>
+      <a class="button button-red" href="mailto:?subject=Confirmación%20XV%20Kenssy%20Sthefania&body=Confirmo%20mi%20asistencia%20a%20tus%20XV%20años.">Confirmar asistencia</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="gold-rule"></div>
+    <p>“Mi vida, mis sueños y mi futuro<br>están en las manos de Dios”</p>
+    <span>Salmo 37:5</span>
+    <small>Con amor, Kenssy Sthefania</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
